@@ -5,6 +5,9 @@
 3. 소수 판별 및 리스트 구하기: hw02/Prime.py
 4. 팩토리얼(재귀): hw02/factorial.py
 5. 1-100 짝수의 합: hw02/sum_even.py
+
+
+
 #3번과제 
 hw03: 홀짝 구분 GUI — hw01/gui_check_even.py
 hw03: 단위 변환(온도/길이) GUI — hw02/gui_f2c.py
