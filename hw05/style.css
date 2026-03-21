@@ -1,0 +1,89 @@
+/* 전체 설정 */
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbf9;
+    color: #333;
+}
+
+/* 메뉴 */
+nav {
+    background: #2d5a27; /* 짙은 초록색 */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+    color: #a8e6cf;
+}
+
+/* 본문 */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* 제목 */
+h1 { color: #2d5a27; border-left: 5px solid #2d5a27; padding-left: 15px; }
+h2 { color: #444; margin-top: 30px; }
+.subtitle { font-style: italic; color: #666; margin-top: -10px; }
+
+.info-card, .highlight-box {
+    background: #f1f8f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.hobby-item {
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+}
+
+/* 버튼 설정 - 이 부분의 주석 기호들을 수정했습니다 */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #2d5a27;
+    color: white !important; /* 글자색 강제 적용 */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover { background: #1e3d1a; }
+.btn.secondary { background: #666; margin-right: 10px; }
+
+/* 하단 정보 */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
