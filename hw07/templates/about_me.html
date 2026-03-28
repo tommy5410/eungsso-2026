@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - 이원재</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}" class="active">About Me</a>
+            <a href="{{ url_for('vision') }}">Vision & Hobby</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>상세 프로필</h1>
+        <div class="info-card">
+            <ul>
+                <li><strong>이름:</strong> 이원재 (21학번)</li>
+                <li><strong>생일:</strong> 2002년 8월 8일</li>
+                <li><strong>가족:</strong> 12살 된 소중한 강아지 루키 🐶</li>
+            </ul>
+        </div>
+        <a href="{{ url_for('index') }}" class="btn secondary">메인으로</a>
+    </div>
+</body>
+</html>

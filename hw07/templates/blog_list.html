@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Vision & Hobby - 이원재</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Me</a>
+            <a href="{{ url_for('vision') }}" class="active">Vision & Hobby</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>나의 비전</h1>
+        <p>튼튼하고 효율적인 <b>온실 시공 사업</b>을 하는 것이 꿈입니다.</p>
+        <hr>
+        <h2>취미</h2>
+        <p>미래를 위한 연습인 <b>농사 🌱</b>와 스트레스 해소용 <b>야구 ⚾</b>를 좋아합니다.</p>
+        <a href="{{ url_for('index') }}" class="btn">처음으로</a>
+    </div>
+</body>
+</html>

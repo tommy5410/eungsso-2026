@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이원재의 홈페이지</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="{{ url_for('index') }}" class="active">Home</a>
+            <a href="{{ url_for('about') }}">About Me</a>
+            <a href="{{ url_for('vision') }}">Vision & Hobby</a>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>"나를 죽이지 못하는 고통은 나를 더 강하게 만든다"</h1>
+            <p class="subtitle">- 프리드리히 니체 -</p>
+        </header>
+        <section class="main-intro">
+            <h2>안녕하세요, 21학번 이원재입니다.</h2>
+            <p>나중에 <b>온실 시공 사업</b>을 꿈꾸며 열심히 농사짓는 25살입니다.</p>
+            <div class="btn-group">
+                <a href="{{ url_for('about') }}" class="btn">상세 프로필 보기</a>
+                <a href="{{ url_for('vision') }}" class="btn">취미 및 목표 보기</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
