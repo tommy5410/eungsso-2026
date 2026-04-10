@@ -1,0 +1,45 @@
+{% extends "single_pages/layout.html" %}
+
+{% block title %}홈 - 이원재의 온실 비전{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-white shadow-sm border-left border-info" style="border-left-width: 10px !important;">
+    <h1 class="display-4 font-italic font-weight-bold">"나를 죽이지 못하는 고통은 나를 더 강하게 만든다"</h1>
+    <p class="lead text-right">- 니체 -</p>
+    <hr class="my-4">
+    <p class="h5 text-secondary">
+        21학번 <b>이원재</b>의 장고(Django) 홈페이지입니다. 🦾 <br>
+        장고를 하기위해 공부하다가 눈물이 날거같습니다.
+    </p>
+    <div class="mt-4 text-center">
+        <a class="btn btn-primary btn-lg px-5 shadow" href="{% url 'single_pages:about_me' %}" role="button">사업가 소개 보러가기</a>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title font-weight-bold text-success">🌱 스마트 온실</h5>
+                <p class="card-text text-muted small">온실사업을 해서 큰돈 만지고 싶습니다.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title font-weight-bold text-info">💻 Django 개발</h5>
+                <p class="card-text text-muted small">응용소프트웨어 수업을 잘 못따라가고 있습니다 살려주세요.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title font-weight-bold text-warning">🛠 시공 전문가</h5>
+                <p class="card-text text-muted small">현장 시공 공법을 공부하며 실력을 쌓고 있습니다.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

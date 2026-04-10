@@ -1,0 +1,36 @@
+{% extends "single_pages/layout.html" %}
+
+{% block title %}소개 - 이원재의 비전{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="font-weight-bold border-bottom pb-3 mb-4">About Me</h1>
+        <h4 class="text-info">"스마트 온실 시공 전문가를 꿈꾸는 이원재입니다."</h4>
+        <p class="mt-4 lead">
+            저는 사물인터넷(IoT) 기술을 농업 현장에 접목하여 가장 효율적이고 튼튼한 온실을 설계하는 비전을 가지고 있습니다.
+            돈을 엄청나게 버는 사업을 구상중입니다. 저는 꼭 포르쉐를 타야겠습니다. 
+        </p>
+        
+        <h5 class="mt-5 font-weight-bold">학력 및 경력</h5>
+        <ul>
+            <li>전북대학교 스마트팜학과 21학번</li>
+            <li>스마트팜 시공을 위해 캐드를 공부하는중</li>
+            <li>Python, Django, Flask 웹 프레임워크 활용 불가능</li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body bg-dark text-white rounded">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text small">Email: wonjae@example.com</p>
+                <p class="card-text small">Github: github.com/wonjae</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-5">
+    <a href="{% url 'single_pages:landing' %}" class="btn btn-outline-secondary">홈으로 돌아가기</a>
+</div>
+{% endblock %}
