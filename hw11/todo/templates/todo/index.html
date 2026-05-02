@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>원재의 Todo 리스트</title>
+</head>
+<body>
+    <h1>나의 할 일 목록 🦾</h1>
+    
+    <ul>
+        
+        {% for todo in todos %}
+            <li>
+                {{ todo.content }} 
+                <small>({{ todo.created_at|date:"Y-m-d H:i" }})</small>
+            </li>
+        {% empty %}
+            <li>아직 할 일이 없어요. 관리자 페이지에서 추가해 보세요!</li>
+        {% endfor %}
+    </ul>
+
+    <hr>
+    <p><a href="/admin">관리자 페이지로 이동해서 할 일 추가하기</a></p>
+</body>
+</html>
