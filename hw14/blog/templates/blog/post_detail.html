@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</head>
+<body class="container mt-5">
+    <div class="border p-4 rounded bg-light shadow-sm">
+        <h1 class="display-5 fw-bold">{{ post.title }}</h1>
+        <p class="text-muted">작성일: {{ post.created_at }}</p>
+        <hr>
+        
+        {% if post.head_image %}
+            <img class="img-fluid rounded mb-4" src="{{ post.head_image.url }}" alt="{{ post.title }} head_image">
+        {% else %}
+            <img class="img-fluid rounded mb-4" src="https://picsum.photos/seed/{{ post.id }}/800/200" alt="random_image">
+        {% endif %}
+        
+        <p class="lead" style="white-space: pre-line;">{{ post.content }}</p>
+        
+        {% if post.file_upload %}
+            <a href="{{ post.file_upload.url }}" class="btn btn-outline-dark mt-3" role="button" download>
+                Download:
+                {% if post.get_file_ext == 'csv' %}
+                    <i class="fas fa-file-csv"></i>
+                {% elif post.get_file_ext == 'xlsx' or post.get_file_ext == 'xls' %}
+                    <i class="fas fa-file-excel"></i>
+                {% elif post.get_file_ext == 'docx' or post.get_file_ext == 'doc' %}
+                    <i class="fas fa-file-word"></i>
+                {% else %}
+                    <i class="far fa-file"></i>
+                {% endif %}
+                {{ post.get_file_name }}
+            </a>
+        {% endif %}
+        
+        <hr>
+        <a href="/blog/" class="btn btn-secondary">← 목록으로 돌아가기</a>
+    </div>
+</body>
+</html>
